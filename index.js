@@ -22,14 +22,11 @@ console.log(person);
 ********************************/
 
 function hasKey(object, key) {
-  object = person;
-  {
-    if (Object.hasOwn(object, "city")) key = true;
-    else key = false;
-  }
+  if (Object.hasOwn(object, key)) key = true;
+  else key = false;
   return key;
 }
-console.log(hasKey());
+console.log(hasKey(person, "name"));
 
 const movies = [
   {
